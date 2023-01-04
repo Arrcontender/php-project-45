@@ -7,11 +7,11 @@ use function cli\prompt;
 
 function nod($n, $m)
 {
-    while(true) {
-        if($n == $m) {
+    while (true) {
+        if ($n == $m) {
             return $m;
         }
-        if($n > $m) {
+        if ($n > $m) {
             $n -= $m;
         } else {
             $m -= $n;

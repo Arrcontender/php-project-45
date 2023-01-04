@@ -8,6 +8,7 @@ use function BrainGames\Even\even;
 use function BrainGames\Calc\calc;
 use function BrainGames\Gcd\gcd;
 use function BrainGames\Progression\progression;
+use function BrainGames\Prime\prime;
 
 function game($gameName)
 {
@@ -25,6 +26,9 @@ function game($gameName)
             break;
         case 'brain-progression':
             progression() ? line("Congratulations, {$name}!") : line("Let's try again, {$name}!");
+            break;
+        case 'brain-prime':
+            prime() ? line("Congratulations, {$name}!") : line("Let's try again, {$name}!");
             break;
     }
 }
