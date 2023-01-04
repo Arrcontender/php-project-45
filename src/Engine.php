@@ -7,6 +7,7 @@ use function BrainGames\Cli\welcome;
 use function BrainGames\Even\even;
 use function BrainGames\Calc\calc;
 use function BrainGames\Gcd\gcd;
+use function BrainGames\Progression\progression;
 
 function game($gameName)
 {
@@ -21,6 +22,9 @@ function game($gameName)
             break;
         case 'brain-gcd':
             gcd() ? line("Congratulations, {$name}!") : line("Let's try again, {$name}!");
+            break;
+        case 'brain-progression':
+            progression() ? line("Congratulations, {$name}!") : line("Let's try again, {$name}!");
             break;
     }
 }
