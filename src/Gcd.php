@@ -5,7 +5,7 @@ namespace BrainGames\Gcd;
 use function cli\line;
 use function cli\prompt;
 
-function nod($n, $m)
+function nod(int $n, int $m)
 {
     while (true) {
         if ($n == $m) {

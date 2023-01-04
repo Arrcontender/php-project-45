@@ -22,8 +22,7 @@ function progression()
             $counter--;
         }
         $correctAnswer = (string)$progression[$hide];
-        $replacement = array($hide => '..');
-        $progression = array_replace($progression, $replacement);
+        $progression = array_replace($progression, array($hide => '..'));
         $result = implode(" ", $progression);
         line("Question: {$result}");
         $yourAnswer = prompt('Answer');

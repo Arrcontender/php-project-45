@@ -10,7 +10,7 @@ use function BrainGames\Gcd\gcd;
 use function BrainGames\Progression\progression;
 use function BrainGames\Prime\prime;
 
-function game($gameName)
+function game(string $gameName)
 {
     $name = welcome();
 

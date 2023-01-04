@@ -17,13 +17,13 @@ function calc()
         $randomExp = $firstNum . " {$randOperator} " . $secondNum;
         switch ($randOperator) {
             case '+':
-                $correctAnswer = (int)$firstNum + (int)$secondNum;
+                $correctAnswer = $firstNum + $secondNum;
                 break;
             case '-':
-                $correctAnswer = (int)$firstNum - (int)$secondNum;
+                $correctAnswer = $firstNum - $secondNum;
                 break;
             case '*':
-                $correctAnswer = (int)$firstNum * (int)$secondNum;
+                $correctAnswer = $firstNum * $secondNum;
                 break;
         }
         line("Question: {$randomExp}");
